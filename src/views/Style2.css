@@ -1,0 +1,104 @@
+.cardImage {
+  margin: 5px 5px;
+  max-width: 100%;
+  max-height: 200px;
+}
+.leftImage {
+  max-width: 70%;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+span {
+  color: black;
+}
+
+.articleEl {
+  border: none;
+}
+
+.articleText {
+  text-align: justify;
+}
+
+.grey-text {
+  color: grey;
+}
+
+.pageLink {
+  text-decoration: none;
+  color: black;
+}
+
+.epmty {
+  height: 100px;
+}
+
+.epmty2 {
+  height: 30px;
+}
+
+.p3 {
+  text-align: justify;
+}
+.center {
+  text-align: center;
+}
+.cardImage2 {
+  padding-top: 15px;
+  margin: auto;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+/* ========= PAGE 5 & navigation  ========== */
+.trTop {
+  border-bottom: none;
+}
+
+.epmty5 {
+  height: 60px;
+}
+.tdImage {
+  max-width: 130px;
+  max-height: 200px;
+  /* margin: 0 auto; */
+  margin: 10px;
+}
+/* tr {
+  border-bottom: 0.01rem solid grey;
+} */
+.bigTotal {
+  text-align: right;
+  margin-right: 120px;
+  margin-top: 20px;
+}
+.productCart {
+  border-bottom: 0.01rem solid grey;
+}
+a,
+.nav-link,
+.tabs {
+  color: rgb(180, 7, 74) !important;
+  text-decoration: none !important;
+}
+
+.nav-link.active {
+  background-color: rgb(223, 9, 127) !important;
+  color: rgb(58, 248, 67) !important;
+}
+a:hover,
+.nav-link:hover,
+.tabs:hover {
+  color: rgb(13, 207, 221) !important;
+}
+
+.btn {
+  background-color: rgb(228, 15, 132) !important;
+}
+
+/* ========= TabAddress  ========== */
+.inputDisplay {
+  display: block;
+  width: 60%;
+}

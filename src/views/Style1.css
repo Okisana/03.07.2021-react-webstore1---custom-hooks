@@ -1,0 +1,29 @@
+body {
+  overflow-x: hidden;
+  background: radial-gradient(rgb(245, 244, 244), #ffd6d6);
+}
+/* .aligned-right {
+  background: radial-gradient(#fff, #ffd6d6);
+} */
+.img-carousel {
+  object-fit: cover;
+  max-width: 100%;
+  height: 450px;
+}
+.carousel-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.cardImage {
+  margin: 5px 5px;
+}
+.card-title {
+  font-size: 13px;
+}
+.card-text {
+  font-size: 13px;
+  max-width: fit-content;
+}
+.articlesContainer {
+  margin: auto;
+}
