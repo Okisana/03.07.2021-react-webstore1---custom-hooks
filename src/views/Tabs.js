@@ -4,12 +4,14 @@ import TabAddress from "./TabAddress";
 import TabSummary from "./TabSummary";
 import TabCart from "./TabCart";
 
-import { useCart } from "./useCart";
+// import { useCart } from "./useCart";
+import { useCartContext } from "./CartContext";
 import { useAdress } from "./useAdress";
 import { useBillingAdress } from "./useBillingAdress";
 
 function Tabs() {
-  const { cart, onDiminishCount, onAddCount, removeProduct } = useCart();
+  const { cart, onDiminishCount, onAddCount, removeProduct } = useCartContext();
+  // const { cart, onDiminishCount, onAddCount, removeProduct } = useCart();
 
   const { shippingAddress, onInputChange } = useAdress();
 
