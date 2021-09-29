@@ -62,33 +62,6 @@ function TabAddress({ cart, onInputChange, onBillingChange }) {
         </div>
       </div>
 
-      <div className="row mt-3" style={{ paddingLeft: "130px" }}>
-        {
-          <div className="col-6">
-            <p>Shipping address</p>
-            <textarea
-              style={{
-                resize: "both",
-                height: "200px",
-                width: "300px",
-                magrin: "20px",
-              }}
-            />
-          </div>
-        }
-        <div className="col-6">
-          <p>Billing address</p>
-          <textarea
-            style={{
-              resize: "both",
-              height: "200px",
-              width: "300px",
-              magrin: "20px",
-            }}
-          />
-        </div>
-      </div>
-
       <div className="row my-5 " style={{ marginRight: "210px" }}>
         <h3 className="bigTotal">
           Total: <span className="totalAll">{totalAll(cart)}</span> EUR
