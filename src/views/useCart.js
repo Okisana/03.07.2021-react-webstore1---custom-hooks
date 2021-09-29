@@ -4,31 +4,39 @@ import product8 from "../images/shop/dBlack.jpg";
 import product9 from "../images/shop/dStripe.jpg";
 
 export const useCart = () => {
-  const defaultCartContents = [
-    {
-      id: 0,
-      name: "Floral dress",
-      price: 20.0,
-      quantity: 1,
-      image: product7,
-    },
-    {
-      id: 1,
-      name: "Black dress",
-      price: 30.0,
-      quantity: 1,
-      image: product8,
-    },
-    {
-      id: 2,
-      name: "Stripe dress",
-      price: 10.0,
-      quantity: 1,
-      image: product9,
-    },
-  ];
+  // const defaultCartContents = [
+  //   {
+  //     id: 0,
+  //     name: "Floral dress",
+  //     price: 20.0,
+  //     quantity: 1,
+  //     image: product7,
+  //   },
+  //   {
+  //     id: 1,
+  //     name: "Black dress",
+  //     price: 30.0,
+  //     quantity: 1,
+  //     image: product8,
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Stripe dress",
+  //     price: 10.0,
+  //     quantity: 1,
+  //     image: product9,
+  //   },
+  // ];
 
-  const [cart, setCart] = useState(defaultCartContents);
+  const [cart, setCart] = useState([]);
+
+  const addNewProduct = (product) => {
+    if (cart.some((cartItem) => cartItem.id === product.id)) {
+      alert("You choose this product already!");
+      return;
+    }
+    setCart([...cart, { ...product, quantity: 1 }]);
+  };
 
   const diminishCount = (id) => {
     const indexToModify = cart.findIndex((cartItem) => cartItem.id === id);
@@ -63,5 +71,6 @@ export const useCart = () => {
     onDiminishCount,
     onAddCount,
     removeProduct,
+    addNewProduct,
   };
 };
